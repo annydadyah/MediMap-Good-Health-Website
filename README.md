@@ -1,66 +1,84 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# MediMap - A Health Facility Map Application for SDG 3: Good Health and Well-being
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## Overview
 
-## About Laravel
+**MediMap** is a web-based platform developed to help improve access to quality healthcare services by providing a transparent, user-driven review and rating system for hospitals and healthcare facilities. The website is designed to support **Sustainable Development Goal (SDG) 3: Good Health and Well-being**, which aims to ensure healthy lives and promote well-being for all.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+The website integrates an interactive map using **Leaflet API** to allow users to easily find healthcare facilities near them. The platform also includes features for users to rate and review healthcare facilities, ensuring that everyone has access to reliable, transparent information when choosing a hospital or clinic.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+---
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Features
 
-## Learning Laravel
+- **Interactive Map:** Powered by Leaflet API, users can find the nearest healthcare facilities and navigate the map to explore them.
+- **User Reviews and Ratings:** Patients can submit reviews and ratings based on their experiences, contributing to the overall transparency and quality of healthcare services.
+- **Admin Features:** Admins can manage the list of hospitals by adding, editing, or removing data, ensuring that the information is accurate and up-to-date.
+- **Search Functionality:** Users can search for hospitals based on their location or specific needs (e.g., hospital type, rating, etc.).
+- **Radius Search:** Users can filter hospitals within a specific radius of their current location.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+---
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## Technologies Used
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- **Frontend:**
+  - **Tailwind CSS:** A utility-first CSS framework used to design the website’s responsive layout.
+  - **Leaflet API:** A JavaScript library used for creating the interactive map feature.
+  
+- **Backend:**
+  - **Laravel 11:** A PHP framework that powers the backend, handling user authentication, data management, and API integration.
+  - **MySQL:** A relational database system used to store data such as hospital details, user reviews, and ratings.
 
-## Laravel Sponsors
+---
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## Installation
 
-### Premium Partners
+### Prerequisites
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+- PHP (Laravel requires PHP 8.x or higher)
+- Composer (Dependency manager for PHP)
+- MySQL
+- Node.js (for frontend development)
 
-## Contributing
+### Steps to Run Locally
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+1. Clone the repository:
+   ```
+   git clone https://github.com/annydadyah/MediMap-Good-Health-Website.git
+   cd MediMap-Good-Health-Website
+    ```
+2. Install PHP dependencies:
+    ```
+    composer install
+    ```
+3. Set up the environment file:
+    - Copy .env.example to .env
+    - Configure your database and environment settings.
+4. Generate the application key:
+    ```
+    php artisan key:generate
+    ```
+5. Run migrations to set up the database:
+    ```
+   php artisan migrate
+    ```
+7. Serve the application locally:
+    ```
+    php artisan serve
+    ```
+8. Visit http://localhost:8000 in your browser.
 
-## Code of Conduct
+---
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## Deployment
+The application is hosted on [infinity free](https://dash.infinityfree.com/) and can be accessed at [MediMap Website](http://uaspwl.great-site.net). The full source code is available on GitHub.
 
-## Security Vulnerabilities
+---
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## Our Team
 
-## License
+MediMap was developed with a spirit of collaboration and dedication. Our team consists of students from the [PLN Institute of Technology (Institut Teknologi PLN)](https://itpln.ac.id), who worked together to bring this project to life. The team members who contributed to this project are:
+1. Annyda Dyah Kusuma – 202231029
+2. T. Rajas Suhaba Arwana – 202231035
+3. Ajeng Puspitaloka – 202231043
+4. Renata Yasmine Selomita – 202231059
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
