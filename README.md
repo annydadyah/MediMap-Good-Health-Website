@@ -1,5 +1,7 @@
 # MediMap - A Health Facility Map Application for SDG 3: Good Health and Well-being
 
+![MediMap](assets/MediMap.png)
+
 ## Overview
 
 **MediMap** is a web-based platform developed to help improve access to quality healthcare services by providing a transparent, user-driven review and rating system for hospitals and healthcare facilities. The website is designed to support **Sustainable Development Goal (SDG) 3: Good Health and Well-being**, which aims to ensure healthy lives and promote well-being for all.
